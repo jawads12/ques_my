@@ -1,0 +1,32 @@
+//Why namespaces are not conflicting
+
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define fast ios_base::sync_with_stdio(false); cin.tie(NULL);
+
+namespace first{
+    int b = 500;
+}
+namespace first{
+    int c = 200;
+}
+
+
+
+
+
+int main ()
+{
+    fast;
+    
+    
+    cout<<first::b<<endl;
+    cout<<first::c<<endl;
+
+
+
+
+
+    return 0;
+}
